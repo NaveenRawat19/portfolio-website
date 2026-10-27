@@ -1,3 +1,11 @@
+const basePath = process.env.BASE_PATH || "";
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  basePath,
+  trailingSlash: true,
+  images: { unoptimized: true },
+};
+
 export default nextConfig;
